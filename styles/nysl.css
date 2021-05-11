@@ -1,0 +1,547 @@
+/*---------------------------BODY----------------------------*/
+*:not(dd) {
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------------------HEADER------------------------- */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#kids {
+  width: 100vw;
+}
+h1 {
+  border-bottom: 10px solid #033949;
+  border-top: 10px solid #033949;
+  box-shadow: 0px 0px 15px 5px #ffffff;
+  color: #033949;
+  text-align: center;
+  background-color: #8be04a;
+  text-shadow: 3px 3px white;
+  font-size: 7vw;
+  animation-name: h1;
+  animation-duration: 2s;
+  opacity: 1;
+}
+@keyframes h1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h2 {
+  border-bottom: 10px solid #033949;
+  border-top: 10px solid #033949;
+  box-shadow: 0px 0px 15px 5px #ffffff;
+  color: #033949;
+  text-align: center;
+  background-color: #8be04a;
+  text-shadow: 3px 3px white;
+  font-size: 7vw;
+  margin: 0 0 4px 0;
+  animation-name: h1;
+  animation-duration: 2s;
+  opacity: 1;
+}
+/*----------------------------NAV--------------------------- */
+nav {
+  background-color: #033949;
+  border-bottom: 10px solid #033949;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  animation-name: h1;
+  padding: 0 0.3em 0 0.3em;
+  animation-duration: 2s;
+  opacity: 1;
+}
+
+nav a {
+  border-radius: 70px 70px 70px 70px;
+  flex-grow: 1;
+  text-decoration: unset;
+  color: white;
+  padding: 0.5em 0 0.5em 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.mobile-nav{
+  display: none;
+}
+input#collapse{
+  display: none;
+}
+label:not(#d-sm-form *) {
+  display: none;
+}
+
+#anchord-active {
+  background-color: #8be04a;
+}
+
+nav :not(#logo):not(#anchord-active):hover {
+  font-size: 1.7em;
+  padding-bottom: -10px 0 -50px 0;
+  margin-bottom: 0;
+  box-shadow: 6px 11px 36px 13px rgb(255, 255, 255);
+  transition: font-size 0.5s, padding-bottom 0.5s, box-shadow 1s;
+}
+
+/* ------------------------BACKGROUND-------------------------*/
+html {
+  background-color: #8be04a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+/* ---------------------------LOGO--------------------------- */
+.logo {
+  animation-name: logo;
+  animation-duration: 2s;
+  position: absolute;
+  width: 250px;
+  top: 285px;
+  left: 5px;
+}
+@keyframes logo {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 285px;
+  }
+}
+/* ---------------------------MAIN--------------------------- */
+main {
+  animation-name: h1;
+  animation-duration: 2s;
+  opacity: 1;
+  background-color: rgb(93, 93, 93);
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 6em 2em 15em 2em;
+}
+dt {
+  padding-left: 1em;
+  padding: 10px 0 10px 1em;
+  font-weight: bold;
+  background-color: #8be04a;
+  font-size: 30px;
+}
+dd {
+  color: white;
+  padding: 10px 1em 10px 0;
+  background-color: #033949;
+  font-size: 30px;
+  padding-left: 1em;
+}
+#contact p {
+  color: white;
+  background-color: #033949;
+  font-size: 20px;
+  padding: 0.7em 0 0.7em 1em;
+  margin: 0;
+}
+#contact {
+  border: 10px solid #033949;
+  box-shadow: 0px 0px 15px 5px #ffffff;
+  border-radius: 30px;
+  padding: 0;
+  margin: 1em 5em 1em 5em;
+}
+.link {
+  text-decoration: unset;
+  font-weight: bold;
+  color: white;
+}
+
+.link:hover {
+  font-size: 24px;
+  color: #8be04a;
+}
+/* ---------------------GAMES SCHEDULE----------------------- */
+h6 {
+  font-size: 20px;
+}
+table * {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #8be04a;
+}
+
+table {
+  border: 10px solid #033949;
+  box-shadow: 0px 0px 15px 5px #ffffff;
+  border-radius: 30px;
+  padding: 0;
+  margin: 1em 5em 1em 5em;
+}
+.en-tabla {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+thead {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+tbody * {
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+.fall {
+  color: white;
+  margin-top: 1em;
+  background-color: #033949;
+  font-style: italic;
+  font-size: 25px;
+}
+.asteriscos {
+  font-size: 25px;
+  color: white;
+  margin: 1em 0 1em 0;
+  background-color: #033949;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.fechas-partido {
+  text-align: center;
+}
+footer {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section p {
+  color: white;
+  padding: 1em 0 1em 0;
+  margin: 1em 0 1em 0;
+  background-color: #033949;
+}
+section span {
+  font-size: 23px;
+}
+footer span {
+  font-size: 23px;
+}
+footer {
+  padding: 1em 0 1em 0;
+  background-color: #033949;
+}
+table {
+  border-spacing: 0;
+}
+
+.ubications * {
+  font-size: 20px;
+  text-align: center;
+}
+
+.header-mapas {
+  font-size: 40px;
+  text-decoration: underline;
+  padding-bottom: 1em;
+}
+iframe {
+  padding: 0;
+  margin: 0;
+}
+
+/* -------------------RULES AND POLICIES----------------------*/
+.rules-main > * {
+  background-color: #8be04a;
+  padding: 1em 3em 1em 3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.rules-main {
+  border: 10px solid #033949;
+  box-shadow: 0px 0px 15px 5px #ffffff;
+  border-radius: 30px;
+  padding: 0;
+  margin: 1em 30em 1em 30em;
+}
+
+h3 {
+  text-align: center;
+  padding: 1em 0 0.5em 0;
+  font-size: 40px;
+}
+h4 {
+  text-align: center;
+  padding-bottom: 1em;
+  font-size: 30px;
+}
+.fifa-rules {
+  text-align: center;
+  padding-bottom: 3em;
+  font-size: 20px;
+}
+li {
+  margin-left: 3em;
+}
+
+h5 {
+  text-align: left;
+  padding: 1em 0 1em 0;
+  font-size: 20px;
+}
+li p {
+  padding-top: 1em;
+}
+span {
+  font-weight: bolder;
+  text-align: left;
+  font-size: 20px;
+}
+
+li::marker {
+  font-weight: bold;
+}
+.marker-letras li::marker {
+  font-weight: normal;
+}
+
+/* ---------------------REGISTRATION----------------------- */
+
+.form {
+  border: 10px solid #033949;
+  box-shadow: 0px 0px 15px 5px #ffffff;
+  max-width: 80vw;
+  position: relative;
+  left: 8vw;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1em 30em 1em 11.5em;
+  background-color: #8be04a;
+  padding: 1em 0em 1em 0em;
+}
+
+fieldset {
+  text-align: left;
+  font-size: 20px;
+  border: 1px solid;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+legend {
+  padding-top: 0em;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.school {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-ubi {
+  position: relative;
+  justify-content: center;
+}
+
+#submit {
+  color: white;
+  background-color: hsl(194, 92%, 30%);
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 30px;
+}
+.signature {
+  padding-right: 15px;
+  font-weight: bold;
+}
+#submit:hover {
+  color: white;
+  background-color: #033949;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+div {
+  text-align: center;
+}
+
+input {
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid;
+}
+li{
+  text-align: left;
+}
+
+::placeholder {
+  font-weight: bolder;
+  color: rgba(27, 26, 26, 0.609);
+  font-size: 15px;
+}
+.street {
+  padding-right: 170px;
+}
+
+/* ---------------------FEEDBACK----------------------- */
+.feedback {
+  align-items: center;
+}
+
+.title-feedback {
+  border: 10px solid #033949;
+  box-shadow: 0px 0px 15px 5px #ffffff;
+  border-radius: 30px;
+  padding: 0;
+  margin: 1em 0em 1em 0em;
+  background-color: #8be04a;
+  padding: 1em;
+}
+
+.tr-tabla * {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* ---------------------RESPONSIVE----------------------*/
+
+
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  nav a {
+    border-radius: 40px 40px 40px 40px;
+    font-size: 15px;
+    border-radius: 0px;
+  }
+
+  nav :not(#logo):not(#anchord-active):hover {
+    font-size: 16px;
+    padding-bottom: -10px 0 -50px 0;
+    margin-bottom: 0;
+    box-shadow: 6px 11px 36px 13px rgb(255, 255, 255);
+    transition: font-size 0.5s, padding-bottom 0.5s, box-shadow 1s;
+  }
+  .d-sm-nav {
+    display: none;
+  }
+
+  label:not(#d-sm-form *) {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    width: 20vw;
+    height: 25vh;
+    top: 7.36em;
+    right: 0;
+    justify-content: space-between;
+    font-size: 1.7em;
+    transform: translateX(100%);
+    transition:  0.4s;
+  }
+  #collapse:checked ~ .mobile-nav {
+    transform: translateX(0);
+  }
+  #collapse + label {
+    animation-name: h1;
+    animation-duration: 3s;
+    opacity: 1;
+    border-radius: 50px 0 0 50px;
+    width: 20px;
+    position: absolute;
+    font-size: 2.5em;
+    padding: 8px;
+    background-color: #8be04a;
+    color: #033949;
+    transition:  0.4s;
+    right: 0em;
+    top: 5em;
+  }
+  #collapse:checked + label {
+    transform:   translateX(-20vw);
+  }
+  #collapse + label .burger{
+    display: block;
+  }
+  #collapse + label .close{
+    display: none;
+  }
+  #collapse:checked + label .burger{
+    display: none; 
+  } 
+  #collapse:checked + label .close{
+    display: block;
+  }
+
+  #d-sm-rules * {
+    font-size: 15px;
+  }
+  #d-sm-rules {
+    margin: 0;
+  }
+
+  #d-sm-form {
+    font-size: 15px;
+    margin: 0;
+  }
+  #d-sm-mainregistration{
+    margin: 0;
+    padding: 0;
+  }
+
+  #d-sm-form * :not(legend, fieldset, h6) {
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+  }
+  ::placeholder {
+    font-size: 10px;
+  }
+  #d-sm-fieldset {
+    margin: 0;
+    font-size: 15px;
+  }
+  #d-sm-logo {
+    width: 150px;
+    position: absolute;
+    top: 20vh;
+  }
+  @keyframes logo {
+    0% {
+      top: -300px;
+    }
+    100% {
+      top: 20vh;
+    }
+  }
+  #d-sm-table * {
+    border: 1px solid black;
+    font-size: 15px;
+  }
+  #d-sm-iframe {
+    width: 170px;
+    height: 100px;
+  }
+  #d-sm-ubications * {
+    font-size: 15px;
+  }
+}

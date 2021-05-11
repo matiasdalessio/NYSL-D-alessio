@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⚽ Registration ⚽</title>
+    <link rel="stylesheet" href="./styles/nysl.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Northside Youth Soccer League</h1>
+      <a href="index.html"><img id="d-sm-logo" class="logo" src="./images/nysl_logo.png" alt="LOGO" /><header> </a>
+      <input type="checkbox" name="mobile-nav" id="collapse" />
+      <label for="collapse">
+        <span class="burger">&equiv;</span>
+        <span class="close">&times;</span>
+      </label>
+      <nav class="mobile-nav">
+        <a pointer href="index.html">Home</a>
+        <a pointer href="games.html">Game Schedule</a>
+        <a pointer href="rules.html">Rules & Policies</a>
+        <a pointer id="anchord-active" href="#">Registration</a>
+        <a pointer href="about.html">About Us</a>
+        <a pointer href="contact.html">Contact</a>
+      </nav>
+      <nav class="d-sm-nav">
+        <a pointer href="index.html">Home</a>
+        <a pointer href="games.html">Game Schedule</a>
+        <a pointer href="rules.html">Rules & Policies</a>
+        <a pointer id="anchord-active" href="#">Registration</a>
+        <a pointer href="about.html">About Us</a>
+        <a pointer href="contact.html">Contact</a>
+      </nav>
+      <img src="./images/design2_image1.jpg" alt="KIDS" />
+      <h2>Registration</h2>
+    </header>
+    <main id="d-sm-mainregistration">
+      <div id="d-sm-form" class="form">
+        <h3>Registration Form</h3>
+        <form action="./show_data.html" method="GET">
+          <fieldset class="d-sm-fieldset">
+            <legend>Personal Info</legend>
+            <fieldset class="d-sm-fieldset">
+              <div class="negrita">
+                <label for="name">Player’s First Name:</label>
+                <input
+                  id="d-sm-ph"
+                  type="text"
+                  name="Name"
+                  id="name"
+                  placeholder="Homer"
+                  required
+                />
+                <label for="last-name">Last Name:</label>
+                <input
+                  id="d-sm-ph"
+                  type="text"
+                  name="Last-name"
+                  placeholder="Simpson"
+                  id="last-name"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset id="d-sm-fieldset">
+              <div class="negrita">
+                <label for="street-address">Street Address:</label>
+                <input
+                  id="d-sm-ph"
+                  class="street"
+                  type="text"
+                  name="Street-address"
+                  placeholder="Evergreen Terrace 742"
+                  id="street-address"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset id="d-sm-fieldset">
+              <div class="negrita">
+                <label for="city">City:</label>
+                <input
+                  id="d-sm-ph"
+                  type="text"
+                  name="City"
+                  placeholder="Springfield"
+                  id="city"
+                  required
+                />
+                <label for="zip-code">Zip Code:</label>
+                <input
+                  id="d-sm-ph"
+                  type="text"
+                  name="Zip-code"
+                  placeholder="1324"
+                  id="zip-code"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset id="d-sm-fieldset">
+              <div class="negrita">
+                <label for="birth-date">Birth Date(MM/DD/YYYY):</label>
+                <input
+                  id="d-sm-ph"
+                  type="text"
+                  name="Birth-date"
+                  placeholder="MM/DD/YYYY"
+                  id="birth-date"
+                  required
+                />
+              </div>
+            </fieldset>
+          </fieldset>
+          <fieldset>
+            <legend>Adicional Info</legend>
+            <fieldset id="d-sm-fieldset">
+              <h6>Gender:</h6>
+              <input
+                type="radio"
+                name="Gender"
+                id="fem"
+                value="Female"
+                checked
+              />
+              <label for="fem">Female</label>
+              <input type="radio" name="Gender" id="male" value="Male" />
+              <label for="male">Male</label>
+              <input type="radio" name="Gender" id="other" value="Other" />
+              <label for="other">Other</label>
+            </fieldset>
+            <fieldset id="d-sm-fieldset">
+              <h6>Grade:</h6>
+              <input
+                type="checkbox"
+                name="Grade"
+                id="pre-school"
+                value="Pre-school"
+              />
+              <label for="pre-school">Pre-School</label>
+              <input type="checkbox" name="Grade" id="1st" value="1st" />
+              <label for="1st">1st</label>
+              <input type="checkbox" name="Grade" id="2nd" value="2nd" />
+              <label for="2nd">2nd</label>
+              <input type="checkbox" name="Grade" id="3rd" value="3rd" />
+              <label for="3rd">3rd</label>
+              <input type="checkbox" name="Grade" id="4th" value="4th" />
+              <label for="4th">4th</label>
+              <input type="checkbox" name="Grade" id="5th" value="5th" />
+              <label for="5th">5th</label>
+            </fieldset>
+            <fieldset id="d-sm-fieldset">
+              <legend>Which elementary school do you live near?</legend>
+              <select name="School" id="School">
+                <option disabled selected>-</option>
+                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                <option value="Marjorie P Hart">Marjorie P Hart</option>
+                <option value="Greenbay">Greenbay</option>
+                <option value="North Elementary">North Elementary</option>
+                <option value="Howard A Yeager">Howard A Yeager</option>
+                <option value="South Elementary">South Elementary</option>
+              </select>
+            </fieldset>
+            <fieldset id="d-sm-fieldset">
+              <legend>
+                What position(s) do you normally play? (check all that apply)
+              </legend>
+              <label for="Forward">Forward</label>
+              <input
+                type="checkbox"
+                name="Position"
+                id="Forward"
+                value="Forward"
+              />
+              <label for="Midfield">Midfield</label>
+              <input
+                type="checkbox"
+                name="Position"
+                id="Midfield"
+                value="Midfield"
+              />
+              <label for="Defense">Defense</label>
+              <input
+                type="checkbox"
+                name="Position"
+                id="Defense"
+                value="Defense"
+              />
+              <label for="Goalkeeper">Goalkeeper</label>
+              <input
+                type="checkbox"
+                name="Position"
+                id="Goalkeeper"
+                value="Goalkeeper"
+              />
+            </fieldset>
+            <fieldset id="d-sm-fieldset">
+              <legend>Uniform Size:</legend>
+              <label for="Youth-Small">Youth Small</label>
+              <input
+                type="checkbox"
+                name="Uniform-size"
+                id="Youth-Small"
+                value="Youth-Small"
+              />
+              <label for="Medium">Medium</label>
+              <input
+                type="checkbox"
+                name="Uniform-size"
+                id="Medium"
+                value="Medium"
+              />
+              <label for="Youth-Medium">Youth Medium</label>
+              <input
+                type="checkbox"
+                name="Uniform-size"
+                id="Youth-Medium"
+                value="Youth-Medium"
+              />
+              <label for="Large">Large</label>
+              <input
+                type="checkbox"
+                name="Uniform-size"
+                id="Large"
+                value="Large"
+              />
+              <label for="Youth-Large">Youth Large</label>
+              <input
+                type="checkbox"
+                name="Uniform-size"
+                id="Youth-Large"
+                value="Youth-Large"
+              />
+              <label for="Extra-Large">Extra-Large</label>
+              <input
+                type="checkbox"
+                name="Uniform-size"
+                id="Extra-Large"
+                value="Extra-Large"
+              />
+              <label for="Small">Small</label>
+              <input
+                type="checkbox"
+                name="Uniform-size"
+                id="Small"
+                value="Small"
+              />
+            </fieldset>
+          </fieldset>
+          <fieldset id="d-sm-fieldset">
+            <legend>Permission to Play</legend>
+            <p>
+              I, the parent or guardian of the minor registrant, agree that the
+              registrant and I will abide by all the rules of the Northside
+              Youth Soccer League (NYSL). In recognizing the possibility of
+              physical injury associated with soccer and in consideration for
+              the “League” accepting the registrant for its soccer programs and
+              activities, I hereby release, discharge, and/or otherwise
+              indemnify NYSL, their employees and associated personnel and
+              volunteers,including the facilities used for practices and games,
+              against any claim by or on behalf of the registrant as a result of
+              the registrant’s participation in the programand/orbeing
+              transported to or from NYSL sponsored activities,which
+              transportation
+            </p>
+            <br />
+            <p>
+              By entering your name below, I herebyagree andauthorizethe
+              above.In addition, by signing below, Ialso acknowledge that I have
+              read the cancellation policy and agree to its terms.
+            </p>
+            <br />
+            <div class="signature">
+              <label for="signature">Parent/GuardianSignature:</label>
+              <input
+                id="d-sm-ph"
+                type="text"
+                name="Signature"
+                placeholder="Homer J Simpson"
+                id="signature"
+                required
+              />
+              <label for="date">Date:</label>
+              <input
+                id="d-sm-ph"
+                type="text"
+                name="Date"
+                placeholder="MM/DD/YYYY"
+                id="date"
+                required
+              />
+            </div>
+          </fieldset>
+          <label class="submit-ubi">
+            <input id="submit" type="submit" value="SEND" />
+          </label>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
